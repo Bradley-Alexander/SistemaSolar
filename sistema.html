@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Solar en Movimiento</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="stars"></div>
+    
+    <div class="solarsystem">
+        <div class="sun">
+            <span class="planet-label">Sol</span>
+        </div>
+        <div class="orbit orbit-mercury">
+            <div class="planet mercury" data-info="Mercurio\nTamaño: 4,880 km de diámetro\nEl planeta más cercano al Sol y el más pequeño del sistema solar.\nSin atmósfera significativa.">
+                <span class="planet-label">Mercurio</span>
+            </div>
+        </div>
+        <div class="orbit orbit-venus">
+            <div class="planet venus" data-info="Venus\nTamaño: 12,104 km de diámetro\nSimilar en tamaño a la Tierra, pero con una atmósfera densa y muy caliente.\nGira en sentido contrario a la mayoría de los planetas.">
+                <span class="planet-label">Venus</span>
+            </div>
+        </div>
+        <div class="orbit orbit-earth">
+            <div class="planet earth" data-info="Tierra\nTamaño: 12,742 km de diámetro\nNuestro hogar, el único planeta conocido con vida y agua líquida en la superficie.">
+                <span class="planet-label">Tierra</span>
+                <div class="moon-orbit">
+                    <div class="moon" data-info="Luna\nTamaño: 3,474 km de diámetro\nÚnico satélite natural de la Tierra. Responsable de las mareas y visible en el cielo nocturno."></div>
+                </div>
+            </div>
+        </div>
+        <div class="orbit orbit-mars">
+            <div class="planet mars" data-info="Marte\nTamaño: 6,779 km de diámetro\nConocido como el planeta rojo, tiene la montaña más alta del sistema solar (Monte Olimpo).\nPosible destino de futuras misiones humanas.">
+                <span class="planet-label">Marte</span>
+                <div class="mars-moon-orbit" style="animation-duration: 1.2s;">
+                    <div class="mars-moon" data-info="Fobos\nTamaño: 22 km de diámetro\nLuna más grande y cercana de Marte."></div>
+                </div>
+                <div class="mars-moon-orbit" style="width: 12px; height: 12px; margin-left: -6px; margin-top: -6px; animation-duration: 0.8s;">
+                    <div class="mars-moon" data-info="Deimos\nTamaño: 12 km de diámetro\nLuna más pequeña y lejana de Marte."></div>
+                </div>
+            </div>
+        </div>
+        <div class="orbit orbit-jupiter">
+            <div class="planet jupiter" data-info="Júpiter\nTamaño: 139,820 km de diámetro\nEl planeta más grande, con una gran mancha roja (tormenta gigante) y decenas de lunas.">
+                <span class="planet-label">Júpiter</span>
+                <div class="jupiter-moons">
+                    <div class="jupiter-moon-orbit" style="width: 40px; height: 40px; margin-left: -20px; margin-top: -20px; animation-duration: 1.8s;">
+                        <div class="jupiter-moon" data-info="Ío\nTamaño: 3,643 km de diámetro\nLuna volcánica, la más activa del sistema solar."></div>
+                    </div>
+                    <div class="jupiter-moon-orbit" style="width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; animation-duration: 2.2s;">
+                        <div class="jupiter-moon" data-info="Europa\nTamaño: 3,122 km de diámetro\nSuperficie helada, posible océano subterráneo."></div>
+                    </div>
+                    <div class="jupiter-moon-orbit" style="width: 56px; height: 56px; margin-left: -28px; margin-top: -28px; animation-duration: 2.7s;">
+                        <div class="jupiter-moon" data-info="Ganimedes\nTamaño: 5,268 km de diámetro\nLa luna más grande del sistema solar."></div>
+                    </div>
+                    <div class="jupiter-moon-orbit" style="width: 60px; height: 60px; margin-left: -30px; margin-top: -30px; animation-duration: 3.1s;">
+                        <div class="jupiter-moon" data-info="Calisto\nTamaño: 4,821 km de diámetro\nSuperficie llena de cráteres, muy antigua."></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="orbit orbit-saturn">
+            <div class="planet saturn" data-info="Saturno\nTamaño: 116,460 km de diámetro\nFamoso por sus impresionantes anillos compuestos de hielo y roca.\nMás de 80 lunas conocidas.">
+                <div class="saturn-rings"></div>
+                <span class="planet-label">Saturno</span>
+                <div class="saturn-moon-orbit">
+                    <div class="saturn-moon" data-info="Titán\nTamaño: 5,151 km de diámetro\nLa luna más grande de Saturno, con atmósfera densa y lagos de metano."></div>
+                </div>
+            </div>
+        </div>
+        <div class="orbit orbit-uranus">
+            <div class="planet uranus" data-info="Urano\nTamaño: 50,724 km de diámetro\nUn gigante helado con un eje de rotación muy inclinado.\nColor azul verdoso por el metano en su atmósfera.">
+                <span class="planet-label">Urano</span>
+                <div class="uranus-moon-orbit">
+                    <div class="uranus-moon" data-info="Titania\nTamaño: 1,578 km de diámetro\nLa luna más grande de Urano."></div>
+                </div>
+            </div>
+        </div>
+        <div class="orbit orbit-neptune">
+            <div class="planet neptune" data-info="Neptuno\nTamaño: 49,244 km de diámetro\nEl planeta más lejano, azul intenso y con vientos supersónicos.\nTiene una gran mancha oscura (tormenta).">
+                <span class="planet-label">Neptuno</span>
+                <div class="neptune-moon-orbit">
+                    <div class="neptune-moon" data-info="Tritón\nTamaño: 2,710 km de diámetro\nLuna más grande de Neptuno, órbita retrógrada."></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="planet-info" class="planet-info"></div>
+    <div style="position:fixed;top:20px;right:30px;z-index:200;background:#111d;padding:16px 22px;border-radius:12px;box-shadow:0 2px 16px #0008;">
+        <label style="color:#fff;font-size:1em;">Velocidad de órbitas:
+            <input id="speed-slider" type="range" min="0.2" max="3" step="0.01" value="1" style="vertical-align:middle;width:120px;">
+            <span id="speed-value" style="margin-left:8px;">1.00x</span>
+        </label>
+        <br>
+        <button id="toggle-orbits" style="margin-top:10px;">Pausar órbitas</button>
+        <br>
+        <label style="color:#fff;font-size:1em;margin-top:10px;display:inline-block;">Color del Sol:
+            <input id="sun-color" type="color" value="#ffd700" style="vertical-align:middle;margin-left:8px;">
+        </label>
+    </div>
+    <script>
+        // Mostrar información y nombre al hacer click
+        const planets = document.querySelectorAll('.planet');
+        const infoBox = document.getElementById('planet-info');
+        let lastActiveLabel = null;
+        // Incluye la luna y lunas de otros planetas en la lógica de información
+        const moons = document.querySelectorAll('.moon, .mars-moon, .jupiter-moon, .saturn-moon, .uranus-moon, .neptune-moon');
+        moons.forEach(moon => {
+            moon.addEventListener('click', (e) => {
+                infoBox.textContent = moon.getAttribute('data-info');
+                infoBox.style.display = 'block';
+                document.querySelectorAll('.planet-label').forEach(l => l.classList.remove('active'));
+                e.stopPropagation();
+            });
+        });
+        planets.forEach(planet => {
+            planet.addEventListener('click', (e) => {
+                infoBox.textContent = planet.getAttribute('data-info');
+                infoBox.style.display = 'block';
+                // Oculta todos los labels
+                document.querySelectorAll('.planet-label').forEach(l => l.classList.remove('active'));
+                // Muestra solo el label del planeta clickeado
+                const label = planet.querySelector('.planet-label');
+                if (label) label.classList.add('active');
+                lastActiveLabel = label;
+                e.stopPropagation();
+            });
+        });
+        document.body.addEventListener('click', (e) => {
+            if (!e.target.classList.contains('planet') && !e.target.classList.contains('moon')) {
+                infoBox.style.display = 'none';
+                document.querySelectorAll('.planet-label').forEach(l => l.classList.remove('active'));
+            }
+        });
+        // Generar estrellas fijas
+        const starsContainer = document.querySelector('.stars');
+        for (let i = 0; i < 180; i++) {
+            const star = document.createElement('div');
+            star.style.position = 'absolute';
+            star.style.width = `${Math.random() * 2 + 1}px`;
+            star.style.height = star.style.width;
+            star.style.background = '#fff';
+            star.style.borderRadius = '50%';
+            star.style.opacity = Math.random() * 0.8 + 0.2;
+            star.style.top = `${Math.random() * 100}%`;
+            star.style.left = `${Math.random() * 100}%`;
+            star.style.boxShadow = `0 0 ${Math.random() * 8 + 2}px #fff8`;
+            starsContainer.appendChild(star);
+        }
+        // Estrellas en movimiento
+        function createMovingStar() {
+            const star = document.createElement('div');
+            star.className = 'star-moving';
+            star.style.left = `${Math.random() * 100}vw`;
+            star.style.top = `-${Math.random() * 10 + 2}px`;
+            star.style.animationDuration = `${Math.random() * 2 + 2.5}s`;
+            starsContainer.appendChild(star);
+            setTimeout(() => starsContainer.removeChild(star), 3500);
+        }
+        setInterval(createMovingStar, 400);
+    </script>
+    <script src="solar.js"></script>
+</body>
+</html>
