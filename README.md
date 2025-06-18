@@ -44,7 +44,7 @@ El desarrollo se realizó utilizando un asistente de IA en modo agente, lo que p
 - Inspirado en la astronomía y la educación interactiva.
 - Puedes modificar y adaptar el código para tus propios fines educativos o de presentación.
 
-## Fotos
+# Fotos
 ## Modo normal
 ![image](https://github.com/user-attachments/assets/d69686de-8fc2-4bb0-9a0e-f7d3d4ba6ef6)
 
