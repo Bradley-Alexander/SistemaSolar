@@ -51,7 +51,7 @@ El desarrollo se realizó utilizando un asistente de IA en modo agente, lo que p
 ## Cambio de color
 ![image](https://github.com/user-attachments/assets/6d9ed8c5-016a-4ca6-b536-9a01204b67a9)
 
-##Cambio de velocidad
+## Cambio de velocidad
 ![image](https://github.com/user-attachments/assets/ad93d602-c52c-443c-9084-925911f605ab)
 
 
